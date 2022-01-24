@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Scale Dashboard UI Design</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen relative md:flex bg-white">
+        <!-- Mobile Menu -->
+        <div class="bg-gray-900 text-gray-200 py-4 px-8 flex justify-between md:hidden">
+          <!-- brand icon -->
+          <a href="" class="text-white font-bold">Dashboard UI</a>
+          <button class="">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+     
+       <!-- side nav -->
+       <div class="w-64 bg-white border-r border-gray-100 py-20 px-5 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 duration-200 ease-in-out flex-col justify-between inline-flex">
+         <nav class="text-sm space-y-3">
+           <a href="#" class="block px-4 py-1 hover:bg-gray-800 hover:text-white rounded-full"
+             ><svg class="w-8 h-8 px-1 inline-block mx-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg><span>Dashboard</span></a
+           >
+           <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-white rounded-full"
+             ><svg class="w-6 h-6 inline-block mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg> Quotation</a
+           >
+           <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-white rounded-full"
+             ><svg class="w-6 h-6 inline-block mx-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>Profile</a
+           >
+           <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-white rounded-full"
+             ><svg class="w-6 h-6 inline-block mx-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z" clip-rule="evenodd"></path></svg>Order Management</a
+           >
+           <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-white rounded-full"
+             ><svg class="w-6 h-6 inline-block mx-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>Settings</a
+           >
+         </nav>
+         <div class="">
+           <div class="flex justify-center items-center -mb-2">
+           <div class="bg-gray-900 rounded-full p-2 w-10 h-10">
+             <svg class=text-gray-200 w-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+           </div>
+           </div>
+           
+           <div class="flex-col bg-white rounded-lg p-4 shadow w-full space-y-4">
+             <p class="text-center text-sm font-semibold">
+               Our team will help you estimate
+             </p>
+             <svg class="w-full h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+           </div>
+         </div>
+       </div>
+     
+       <!-- main -->
+       <div class="flex-1">
+         <div class="flex justify-between py-5 px-8 bg-white">
+           <div class="flex items-center relative">
+             <input class="rounded-full border border-gray-00 text-xs font-semibold px-4 py-2 w-64" type="text" name="" id="" placeholder="Search For Query" />
+             <svg class="w-5 h-5 absolute right-0 mr-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+           </div>
+           <div class="flex space-x-5">
+             <div class="flex space-x-8">
+               <button class="relative">
+                 <svg class="w-6 h-6 inline-block text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                 <span class="w-1.5 h-1.5 bg-gray-800 rounded-full absolute top-2 left-5"></span>
+               </button>
+               <button class="relative">
+                 <svg class="w-6 h-6 inline-block text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                 <span class="w-1.5 h-1.5 bg-gray-800 rounded-full absolute top-2 left-4"></span>
+               </button>
+             </div>
+             <div class="border border-gray-200"></div>
+             <div class="flex items-center space-x-1">
+               <div class="text-right">
+                 <h3 class="text-sm text-gray-800">Jane Doe</h3>
+                 <p class="text-xs text-gray-400">Super Admin</p>
+               </div>
+               <img class="w-10 h-10 rounded-full filter grayscale" src="https://i.pravatar.cc/150?img=5" alt="" srcset="" />
+               <svg class="w-4 h-4 inline-flex" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+             </div>
+           </div>
+         </div>
+         <div class="bg-gray-50 min-h-screen px-8 py-4">
+           <h1 class="text-gray-700 font-semibold text-xl leading-5">Overview</h1>
+           <!-- stats -->
+           <div class="flex justify-between my-2 space-x-2">
+             <div class="flex justify-center items-center space-y-3 group bg-white cursor-pointer transition duration-500 hover:bg-gray-900 hover:text-gray-900 w-full h-auto py-5 flex-col rounded-lg">
+               <div class="bg-gray-100 p-2 rounded-full">
+                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+               </div>
+               <div class="text-center space-y-1">
+                 <h2 class="text-3xl text-gray-700 group-hover:text-gray-200 font-bold">2.3K</h2>
+                 <p class="text-xs text-gray-400">Total Requests</p>
+               </div>
+               <div class="font-bold">
+                 <svg class="w-3 h-3 inline-block group-hover:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                 <span class="text-xs text-gray-800 group-hover:text-gray-300">59.8%</span>
+               </div>
+             </div>
+             <div class="flex justify-center items-center space-y-3 group bg-white cursor-pointer transition duration-500 hover:bg-gray-900 hover:text-gray-900 w-full h-auto py-5 flex-col rounded-lg">
+               <div class="bg-gray-100 p-2 rounded-full">
+                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+               </div>
+               <div class="text-center space-y-1">
+                 <h2 class="text-3xl text-gray-700 group-hover:text-gray-200 font-bold">823</h2>
+                 <p class="text-xs text-gray-400">Total Approval</p>
+               </div>
+               <div class="font-bold">
+                 <svg class="w-3 h-3 inline-block group-hover:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                 <span class="text-xs text-gray-800 group-hover:text-gray-300">30.9%</span>
+               </div>
+             </div>
+             <div class="flex justify-center items-center space-y-3 group bg-white cursor-pointer transition duration-500 hover:bg-gray-900 hover:text-gray-900 w-full h-auto py-5 flex-col rounded-lg">
+               <div class="bg-gray-100 p-2 rounded-full">
+                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                   <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                 </svg>
+               </div>
+               <div class="text-center space-y-1">
+                 <h2 class="text-3xl text-gray-700 group-hover:text-gray-200 font-bold">1.2K</h2>
+                 <p class="text-xs text-gray-400">Pending Questions</p>
+               </div>
+               <div class="font-bold">
+                 <svg class="w-3 h-3 inline-block group-hover:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                 <span class="text-xs text-gray-800 group-hover:text-gray-300">59.8%</span>
+               </div>
+             </div>
+             <div class="flex justify-center items-center space-y-3 group bg-white cursor-pointer transition duration-500 hover:bg-gray-900 hover:text-gray-900 w-full h-auto py-5 flex-col rounded-lg">
+               <div class="bg-gray-100 p-2 rounded-full">
+                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+               </div>
+               <div class="text-center space-y-1">
+                 <h2 class="text-3xl text-gray-700 group-hover:text-gray-200 font-bold">200</h2>
+                 <p class="text-xs text-gray-400">Rejected Quotations</p>
+               </div>
+               <div class="font-bold">
+                 <svg class="w-3 h-3 inline-block group-hover:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                 <span class="text-xs text-gray-800 group-hover:text-gray-300">10.2%</span>
+               </div>
+             </div>
+             <div class="flex justify-center items-center space-y-3 group bg-white cursor-pointer transition duration-500 hover:bg-gray-900 hover:text-gray-900 w-full h-auto py-5 flex-col rounded-lg">
+               <div class="bg-gray-100 p-2 rounded-full">
+                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+               </div>
+               <div class="text-center space-y-1">
+                 <h2 class="text-3xl text-gray-700 group-hover:text-gray-200 font-bold">102</h2>
+                 <p class="text-xs text-gray-400">Under Review Process</p>
+               </div>
+               <div class="font-bold">
+                 <svg class="w-3 h-3 inline-block group-hover:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                 <span class="text-xs text-gray-800 group-hover:text-gray-300">10.2%</span>
+               </div>
+             </div>
+           </div>
+     
+           <!-- Graphs -->
+           <div class="flex justify-between space-x-4">
+             <div class="p-4 bg-white w-full">
+               <div class="flex justify-between my-2">
+                 <h4 class="text-gray-700 font-semibold text-lg leading-5">Quotation Overview</h4>
+                 <p class="space-x-2">
+                   <span class="text-xs text-gray-400">15 days</span>
+                   <svg class="w-4 h-4 inline-block bg-gray-200 rounded-full text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                 </p>
+               </div>
+               <div class="h-48 bg-gray-100 w-full"></div>
+             </div>
+             <div class="p-4 bg-white w-full">
+               <div class="flex justify-between my-2">
+                 <h4 class="text-gray-700 font-semibold text-lg leading-5">Today's Status</h4>
+                 <p class="space-x-2">
+                   <span class="text-xs text-gray-400">15 days</span>
+                   <svg class="w-4 h-4 inline-block bg-gray-200 rounded-full text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                 </p>
+               </div>
+               <div class="h-48 bg-gray-100 w-full"></div>
+             </div>
+           </div>
+           <!-- List -->
+           <div class="mt-4">
+             <div class="flex justify-around text-gray-400 text-xs py-2">
+               <div>Enquiry Management</div>
+               <div>Code Number</div>
+               <div>Pick up location</div>
+               <div>Drop location</div>
+               <div>Weight</div>
+               <div>Load Type</div>
+               <div>Status</div>
+             </div>
+             <div class="flex justify-around bg-white py-6 border-b-4 border-gray-100 rounded">
+                 <div class="flex space-x-4">
+                   <img class="w-10 h-10 rounded-full filter grayscale" src="https://i.pravatar.cc/150?img=8" alt="" srcset="" />
+                   <div class="">
+                     <h4 class="text-sm text-gray-800 font-semibold">Brian Cook</h4>
+                     <p class="text-xs text-gray-400">Lead PM</p>
+                   </div>
+                 </div>
+                 <div class="text-gray-700 text-sm font-semibold">
+                   <p>BRU1902-ARC</p>
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   New York
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   London
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   3.8 Tonne
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   Bulk Shipping
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   <button class="bg-gray-900 text-gray-300 py-2 px-4 rounded-full">Shipped</button>
+                 </div>
+             </div>
+             <div class="flex justify-around bg-white py-6">
+                 <div class="flex space-x-4">
+                   <img class="w-10 h-10 rounded-full filter grayscale" src="https://i.pravatar.cc/150?img=16" alt="" srcset="" />
+                   <div class="">
+                     <h4 class="text-sm text-gray-800 font-semibold">Brian Cook</h4>
+                     <p class="text-xs text-gray-400">Lead PM</p>
+                   </div>
+                 </div>
+                 <div class="text-gray-700 text-sm font-semibold">
+                   <p>BRU1902-ARC</p>
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   New York
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   London
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   3.8 Tonne
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   Bulk Shipping
+                 </div>
+                  <div class="text-gray-700 text-sm font-semibold">
+                   <button class="bg-gray-900 text-gray-300 py-2 px-4 rounded-full">Shipped</button>
+                 </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+</body>
+</html>
+
+
+ 
